@@ -2,17 +2,13 @@ let inputNumber = document.getElementById("number")
 
 let button = document.getElementById("button")
 
-if (inputNumber%2 ==0) {
-
-    button.addEventListener("click", (event) => {
+button.addEventListener("click", (event ) => {
+    if (inputNumber.value%2 ==0){
         console.log(`${inputNumber.value} est pair`)
-    })
-} else {
-    button.addEventListener("click", (event) => {
+    } else {
         console.log(`${inputNumber.value} est impair`)
-    })
-}
+    }
 
 
 
-
+})
