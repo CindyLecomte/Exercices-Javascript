@@ -2,15 +2,12 @@ let nombreUn = document.getElementById("numberOne")
 
 let nombreDeux = document.getElementById("numberTwo")
 
-let resultNumber = nombreUn.value * nombreDeux.value
 
-console.log(resultNumber)
-
-//let button = document.querySelector("button")
+let button = document.getElementById("button")
 
 
-//button.addEventListener("click", (event) => {   
-    //console.log(resultNumber)
-//})
+button.addEventListener("click", (event) => {   
+    console.log(nombreUn * nombreDeux)
+})
 
-// Ca marche en faisant le bouton rafraichir mais pas en cliquant sur le bouton
+//Marche pas
