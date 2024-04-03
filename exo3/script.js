@@ -7,7 +7,7 @@ let button = document.getElementById("button")
 
 
 button.addEventListener("click", (event) => {   
-    console.log(nombreUn * nombreDeux)
+    console.log(nombreUn.value * nombreDeux.value)
 })
 
 //Marche pas
