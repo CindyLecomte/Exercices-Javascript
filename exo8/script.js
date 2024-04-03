@@ -8,7 +8,13 @@ const noteTroisEntier = parseInt(noteTrois.value)
 
 const result = (noteUneEntier + noteDeuxEntier + noteTroisEntier) / 3
 
-console.log(result)
+let button = document.getElementById("button")
+
+button.addEventListener("click", (event) => {
+    console.log(result)
+})
+
+
 
 
 
