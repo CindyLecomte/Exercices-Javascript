@@ -6,20 +6,13 @@ const numberThree = document.getElementById("numberThree")
 
 const button = document.getElementById("button")
 
-if (numberOne.value > numberTwo.value && numberOne.value > numberThree.value) {
+
+
+button.addEventListener("click", (event) => {
+  if (numberOne.value > numberTwo.value && numberOne.value > numberThree.value) {
     console.log(numberOne.value)
- } else if (numberTwo.value > numberOne.value && numberTwo.value > numberThree.value) {
+    } else if (numberTwo.value > numberOne.value && numberTwo.value > numberThree.value) {
     console.log(numberTwo.value)
- } else {
-   console.log(numberThree.value)
-}
-
-
-//button.addEventListener("click", (event) => {
-  //  if (numberOne.value > numberTwo.value && numberOne.value > numberThree.value) {
-    //   console.log(numberOne.value)
-    //} else if (numberTwo.value > numberOne.value && numberTwo.value > numberThree.value) {
-     //  console.log(numberTwo.value)
-   // } else {
-    //  console.log(numberThree.value)
-  // }}) 
+   } else {
+    console.log(numberThree.value)
+}}) 
