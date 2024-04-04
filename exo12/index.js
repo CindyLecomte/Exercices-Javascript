@@ -2,16 +2,12 @@ const tableau = [
     1,12,25,30
 ]
 
-//let counter = 0;    
 
-//for (let elt of tableau){
+const result = tableau.filter((elt) =>elt<10);
 
-   // if(elt >= 10) {
-      //  console.log("ok")
-     //   counter = counter +1
-        
-   // } else {
-    //    console.log("erreur")
-  //  }
-//}
+console.log(result)
+
+if(result.length > 0){
+    console.log("Il y a une erreur")
+}
 
