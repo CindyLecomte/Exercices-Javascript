@@ -1,13 +1,12 @@
-function trueOrFalse (tableau, elmt) {
+function trueOrFalse (tableau, filtre) {
     let isInTable = false
 
     for (let elmnt of tableau) {
-        if (elmnt === tableau){
+        if (elmnt === filtre){
             isInTable = true
         } else {
 
         }
-
     }
 
     return (
@@ -16,7 +15,7 @@ function trueOrFalse (tableau, elmt) {
 }
 
 
-const TabA = [1,2,3,4, 5];
+const TabA = [1,2,3,4 ];
 const a = 5
 
 const estCeBon = trueOrFalse(TabA, a)
