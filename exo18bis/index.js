@@ -9,7 +9,7 @@ function concat(tableauA, tableauB){
     }
 
     return (
-        tableauA + tableauB
+        tableauC
     )
 }
 
