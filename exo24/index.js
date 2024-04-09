@@ -44,7 +44,6 @@ const classe = [
 
 
 for (let eleve of classe){
- for (let elt in eleve){
     console.log(eleve.nom, eleve.prenom, eleve.age)
- }
+ 
 }
