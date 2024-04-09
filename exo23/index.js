@@ -1,80 +1,50 @@
-function concat(objUn, objDeux, objTrois, objQuatre, objCinq){
-    const tableau = []
+//5 objets élève
 
-    let index = 0
+const eleveUn = {
+    notes : [2,5,8],
+    age : 12,
+    nom: "Dubois",
+    prenom : "Léa"
+}
 
-    for(let property in objUn){
-        index++
-        tableau.push(`${property} : ${objUn[property]}`)
-    }
+const eleveDeux = {
+    notes : [18,9,15],
+    age: 14,
+    nom: "Martinez",
+    prenom: "Emma"
+}
 
-    for(let property in objDeux){
-        index++
-        tableau.push(`${property} : ${objDeux[property]}`)
-    }
-    
-    for(let property in objTrois){
-        index++
-        tableau.push(`${property} : ${objTrois[property]}`)
-    }
+const eleveTrois = {
+    notes : [7, 19, 20],
+    age: 13,
+    nom: "Nguyen",
+    prenom: "Alice"
+}
 
-    for(let property in objQuatre){
-        index++
-        tableau.push(`${property} : ${objQuatre[property]}`)
-    }
+const eleveQuatre = {
+    notes: [8,14,5],
+    age: 12,
+    nom: "Moreau",
+    prenom: "Lucas"
+}
 
-    for(let property in objCinq){
-        index++
-        tableau.push(`${property} : ${objCinq[property]}`)
-    }
-
-    return tableau
+const eleveCinq = {
+    notes: [17, 20, 2],
+    age:14,
+    nom:"Bernard",
+    prenom:"Gabriel"
 }
 
 
-const eleveUn = {
-    notes : [15,6,19],
-    age: 12,
-    nom: "Dupont",
-    prenom: "Mélanie"
-};
+//Tableau d'objets classe de 5 élèves
 
+const classe = [
+    {eleveUn},
+    {eleveDeux},
+    {eleveTrois},
+    {eleveQuatre},
+    {eleveCinq}
+]
 
-const eleveDeux = {
-    notes: [12, 5, 7],
-    age: 13,
-    nom:"Dufour",
-    prenom: "Antoine"
-};
-
-const eleveTrois = {
-    notes : [7, 20, 4],
-    age: 12,
-    nom:"Bourges",
-    prenom: "Augustine"
-};
-
-const eleveQuatre = {
-    notes : [9, 18, 15],
-    age: 13,
-    nom:"Fauster",
-    prenom:"Julie"
-};
-
-const eleveCinq = {
-    notes : [14, 18, 20],
-    age: 14,
-    nom: "Langevin",
-    prenom:"Kevin"
-};
-
-
-const tableauVide = concat(eleveUn, eleveDeux, eleveTrois, eleveQuatre, eleveCinq)
-console.log(tableauVide)
-
-
-
-
-
-
+console.log(classe)
 
